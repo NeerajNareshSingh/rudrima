@@ -13,6 +13,7 @@
    <!-- Site Icons -->
    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- Site CSS -->
@@ -39,26 +40,34 @@
       </div>
       <!-- end loader -->
       <!-- END LOADER -->
-      <header class="header header_style_01">
-         <nav class="megamenu navbar navbar-default" data-spy="affix">
-            <div class="container-fluid">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <!-- HEADER -->
+      <header class="header header_style_01" style="font-family: 'Poppins', sans-serif;">
+         <nav class="navbar navbar-default navbar-expand-md fixed-top bg-white shadow-sm p-2">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+               <!-- LOGO -->
+               <div class="navbar-header d-flex align-items-center">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                     aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index-real-estate.html" style="width: 100%; height: 100%;"><img src="https://rudrimadevelopers.com/wp-content/uploads/2020/11/oie_transparent-4.png" width="220" alt="image" /></a>
+                  <!-- Adjust logo size for smaller devices -->
+                  <a class="navbar-brand" href="index-real-estate.html">
+                  <img src="images/logo.png" alt="Rudrima Developers" style="height: 50px; max-width: 180px;">
+                  </a>
                </div>
-               <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                     <li><a data-scroll href="#home">Home</a></li>
-                     <li><a data-scroll href="#features">About Us <span class="hidden-xs">*</span></a></li>
-                     <li><a data-scroll href="#agent">The Agent</a></li>
-                     <li><a data-scroll href="#gallery">Gallery</a></li>
-                     <li><a data-scroll href="#testimonials">Testimonials</a></li>
-                     <li><a data-scroll href="#support">Contact</a></li>
+               <!-- NAVIGATION LINKS -->
+               <div id="navbar" class="navbar-collapse collapse text-center">
+                  <ul class="nav navbar-nav navbar-right" style="font-size: 15px; font-weight: 500;">
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#features">About Us</a></li>
+                     <li><a href="#projects">Our Projects</a></li>
+                     <li><a href="#gallery">Gallery</a></li>
+                     <li><a href="#testimonials">Testimonials</a></li>
+                     <li><a href="#support">Contact</a></li>
+                     <!-- SOCIAL ICONS -->
                      <li class="social-links"><a href="#"><i class="fa fa-twitter global-radius"></i></a></li>
                      <li class="social-links"><a href="#"><i class="fa fa-facebook global-radius"></i></a></li>
                      <li class="social-links"><a href="#"><i class="fa fa-linkedin global-radius"></i></a></li>
@@ -67,107 +76,103 @@
             </div>
          </nav>
       </header>
-      <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('uploads/parallax.jpg');">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-12">
+      <!-- Load Google Font in <head> -->
+      <!-- Home Section -->
+      <div id="home" class="parallax first-section position-relative" data-stellar-background-ratio="0.4"
+         style="background-image: url('images/rudrima-background.jpeg'); background-size: cover; font-family: 'Poppins', sans-serif;">
+         <!-- Dark Overlay -->
+         <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.55); z-index:1;"></div>
+         <!-- Main Content -->
+         <div class="container" style="position: relative; z-index: 2;">
+            <div class="row align-items-center py-5">
+               <!-- Left Tagline -->
+               <div class="col-md-6 col-sm-12 text-white">
                   <div class="big-tagline clearfix">
-                     <h2 style="font-weight: 800;">We Turn Your Dream Home Plan into Reality</h2>
-                     <p class="lead">We are a team of experienced architects and engineers who are dedicated to turning your dream home plan into reality. We offer a wide range of services to help you build your dream home.</p>
-                     <a data-scroll href="#gallery" class="btn btn-light btn-radius grd1 btn-brd">View Gallery</a>
+                     <h2 style="font-weight: 700; font-size: 38px; line-height: 1.3;">We Turn Your <span style="color: #ffcc00;">Dream Home</span> Plan into Reality</h2>
+                     <p class="lead" style="font-size: 17px; color: #f0f0f0;">We are a team of experienced architects and engineers dedicated to building your dream home. From planning to execution, we ensure quality, transparency, and satisfaction.</p>
+                     <a href="#gallery" class="btn btn-warning text-dark btn-radius btn-brd mt-3" style="font-weight: 600;">View Gallery</a>
                   </div>
                </div>
-               <div class="col-md-6 wow slideInRight hidden-xs hidden-sm">
-                  <div class="contact_form">
-                     <h3><i class="fa fa-envelope-o grd1 global-radius"></i> QUICK APPOINTMENT</h3>
+               <!-- Right Form -->
+               <div class="col-md-6 wow slideInRight hidden-xs hidden-sm" style="visibility: visible; animation-name: slideInRight;">
+                  <div class="contact_form bg-white p-4 rounded shadow-lg">
+                     <h3 class="text-dark mb-4" style="font-weight: 600;"><i class="fa fa-envelope-o grd1 global-radius me-2"></i> Quick Appointment</h3>
                      <form id="contactform1" class="row" name="contactform" method="post">
                         <fieldset class="row-fluid">
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                           <div class="col-lg-6 col-md-6 mb-3">
                               <input type="text" name="first_name1" id="first_name1" class="form-control" placeholder="First Name">
                            </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                           <div class="col-lg-6 col-md-6 mb-3">
                               <input type="text" name="last_name1" id="last_name1" class="form-control" placeholder="Last Name">
                            </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                           <div class="col-lg-6 col-md-6 mb-3">
                               <input type="email" name="email1" id="email1" class="form-control" placeholder="Your Email">
                            </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                           <div class="col-lg-6 col-md-6 mb-3">
                               <input type="text" name="phone1" id="phone1" class="form-control" placeholder="Your Phone">
                            </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">Select Time</label>
-                              <select name="select_service1" id="select_service1" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="selecttime">Select Time</option>
-                                 <option value="Weekdays">Weekdays</option>
-                                 <option value="Weekend">Weekend</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">What is max price?</label>
-                              <select name="select_price1" id="select_price1" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="$100 - $2000">$100 - $2000</option>
-                                 <option value="$2000 - $4000">$2000 - $4000</option>
-                                 <option value="$4000 - $10000">$4000 - $10000</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                              <button type="submit" value="SEND" id="submit1" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get an Appointment</button>
+                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
+
+                           </div>   
+                           <div class="col-lg-12 text-center mt-3">
+                              <button type="submit" value="SEND" id="submit1" class="btn btn-warning text-dark btn-radius btn-brd btn-block" style="font-weight: 600;">Get an Appointment</button>
                            </div>
                         </fieldset>
                      </form>
                   </div>
                </div>
             </div>
-            <!-- end row -->
          </div>
-         <!-- end container -->
       </div>
       <!-- end section -->
       <div id="features" class="section wb">
          <div class="container">
-            <div class="section-title row text-center">
+            <!-- ABOUT US SECTION TITLE -->
+            <!-- ABOUT US SECTION -->
+            <div class="section-title row text-center" style="font-family: 'Poppins', sans-serif; padding: 60px 20px 40px;">
                <div class="col-md-8 col-md-offset-2">
-                  <h3 style="font-weight: 800;">About Us</h3>
-                  <p class="lead">Rudrima Developers is a reputed name in the field of bulk land acquisition and infrastructure development. The Company maintains the highest standards in real estate sector. The company started its journey few years back with a mission to provide home to a common man at pocket friendly prices..</p>
+                  <!-- Title -->
+                  <h3 style="font-weight: 700; font-size: 32px; color: #222; margin-bottom: 25px;">
+                     About Us
+                  </h3>
+                  <!-- Paragraphs -->
+                  <p class="lead" style="font-size: 17px; line-height: 1.8; color: #555; text-align: justify;">
+                     <strong>Rudrima Developers</strong> is a reputed name in the field of bulk land acquisition and infrastructure development. We are an 
+                     <strong>ISO 9001:2008 certified company</strong>, maintaining the highest standards in the real estate sector.
+                  </p>
+                  <p class="lead" style="font-size: 17px; line-height: 1.8; color: #555; text-align: justify;">
+                     Rudrima Developers is a trendsetter in the realty sector, offering allied real estate services including township planning, marketing, sales support, and land development. Our journey began just a few years ago with a mission to provide homes for the common man —
+                     <span style="color: #ff9900; font-weight: 500;">at pocket-friendly prices</span>.
+                  </p>
+                  <!-- Vision Title -->
+                  <h4 style="font-weight: 600; font-size: 24px; color: #333; margin-top: 40px; margin-bottom: 15px;">
+                     Our Vision
+                  </h4>
+                  <!-- Vision Description -->
+                  <p class="lead" style="font-size: 17px; line-height: 1.8; color: #555; text-align: justify;">
+                     To build a world-class organization that is innovative, environmentally and investment-friendly, professional yet ethical, technologically advanced while remaining rooted in the cultural values that define us.
+                  </p>
+                  <!-- Final Statement -->
+                  <p class="lead" style="font-size: 17px; line-height: 1.8; color: #555; text-align: justify;">
+                     We serve the needs of people with integrity and reliability, embracing complete transparency and a friendly, down-to-earth approach toward our customers.
+                  </p>
                </div>
-               <!-- end col -->
             </div>
             <!-- end title -->
-            <div class="property-detail row clearfix">
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-coupon effect-1"></i>
-                  <h4>Square Feet : 3200</h4>
-               </div>
-               <!-- end col -->
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-family-room effect-1"></i>
-                  <h4>Ideal for Family</h4>
-               </div>
-               <!-- end col -->
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-house effect-1"></i>
-                  <h4>Garage : 2</h4>
-               </div>
-               <!-- end col -->  
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-full-bed effect-1"></i>
-                  <h4>Bedrooms : 3</h4>
-               </div>
-               <!-- end col -->  
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-swimming-pool effect-1"></i>
-                  <h4>Pool : Yes</h4>
-               </div>
-               <!-- end col -->
-               <div class="col-md-2 col-sm-3 col-xs-6">
-                  <i class="flaticon-calendar effect-1"></i>
-                  <h4>Build in : 2015</h4>
-               </div>
-               <!-- end col -->  
-            </div>
             <!-- end how-its-work -->
-            <hr class="invis">
+           
+            <!-- end row -->
+         </div>
+        
+      </div>
+      <div id="projects" class="section wb" style="padding-top: 0px;">
+         <div class="container">
+            <!-- end how-its-work -->
             <div class="row text-center">
+               <h3 style="font-weight: 700; font-size: 32px; color: #222; margin-bottom: 25px;">
+                  Our Projects
+               </h3>
                <div class="col-md-4 col-sm-6 col-xs-12">
                   <div class="service-widget">
                      <div class="post-media wow fadeIn">
@@ -442,22 +447,8 @@
                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                               <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
                            </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">Select Time</label>
-                              <select name="select_service" id="select_service" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="selecttime">Select Time</option>
-                                 <option value="Weekdays">Weekdays</option>
-                                 <option value="Weekend">Weekend</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">What is max price?</label>
-                              <select name="select_price" id="select_price" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="$100 - $2000">$100 - $2000</option>
-                                 <option value="$2000 - $4000">$2000 - $4000</option>
-                                 <option value="$4000 - $10000">$4000 - $10000</option>
-                              </select>
-                           </div>
+                          
+                           
                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
                            </div>
@@ -481,10 +472,10 @@
                <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="widget clearfix">
                      <div class="widget-title">
-                        <img src="https://rudrimadevelopers.com/wp-content/uploads/2020/11/oie_transparent-4.png" width="210" alt="">
+                        <img src="images/logo.png" width="210" alt="">
                      </div>
-                     <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                     <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                     <p> Rudrima Developers is a reputed name in the field of bulk land acquisition and infrastructure development. The Company maintains the highest standards in real estate sector.</p>
+                     <p>We serve the needs of people with integrity and reliability with a belief in complete transparency and friendly down to earth approach to customers.</p>
                   </div>
                   <!-- end clearfix -->
                </div>
@@ -495,10 +486,10 @@
                         <h3>Contact Details</h3>
                      </div>
                      <ul class="footer-links">
-                        <li><a href="mailto:#">info@yoursite.com</a></li>
-                        <li><a href="#">www.yoursite.com</a></li>
-                        <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-                        <li>+61 3 8376 6284</li>
+                        <li><a href="mailto:#">info@rudrimadevelopers.com</a></li>
+                        <li>Working Hours- 09:00 am to 06:00 Pm Business Days -7 days week.</li>
+                        <li>Site office address : Rudrima Enclave, 300 metres from Kisan path (outer ring road )under pass Bijnor Sisendi Road, Anoop kheda,near CRPF chauraha, Lucknow, Uttar Pradesh, INDIA-226006.</li>
+                        <li>95809 44923</li>
                      </ul>
                      <!-- end links -->
                   </div>
