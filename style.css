@@ -2182,6 +2182,26 @@ select.form-control {
   .navbar-nav > li > a:hover {
     color: #ffcc00;
   }
+  .btn-know-more {
+    display: inline-block;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn-know-more:hover {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
   
   @media (max-width: 768px) {
     .navbar-brand img {
