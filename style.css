@@ -381,6 +381,9 @@ a img.aligncenter {
     text-transform: capitalize;
     background-color: transparent;
 }
+.navbar {
+    border-radius: 0px !important;
+}
 
 .header_style_01 .navbar-default .navbar-nav > li a {
     background-color: transparent !important;
@@ -1115,6 +1118,7 @@ li.social-links a {
 
 .post-media img {
     width: 100%;
+    height: 262px;
 }
 
 .playbutton {
@@ -2170,7 +2174,7 @@ select.form-control {
 
 /* Optional Enhancements */
 .navbar-brand img {
-    max-height: 55px;
+    max-height: 100%;
     height: auto;
   }
   
@@ -2182,30 +2186,34 @@ select.form-control {
   .navbar-nav > li > a:hover {
     color: #ffcc00;
   }
-  .btn-know-more {
-    display: inline-block;
-    background: linear-gradient(to right, #ff9800, #ff5722);
-    color: #fff;
-    padding: 10px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .btn-know-more:hover {
-    background: linear-gradient(to right, #ff5722, #ff9800);
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-  }
+   .btn-know-more {
+        display: inline-block;
+        background: linear-gradient(to right, #ff9800, #ff5722);
+        color: #fff;
+        padding: 10px 24px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        margin-top: 15px;
+      }
+      
+      .btn-know-more:hover {
+        background: linear-gradient(to right, #ff5722, #ff9800);
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      }
   
   @media (max-width: 768px) {
     .navbar-brand img {
       max-height: 45px;
+    }
+    .navbar {
+        border-radius: 0px !important;
     }
   
     .navbar-nav {
@@ -2223,4 +2231,72 @@ select.form-control {
       display: block;
     }
   }
+
+  .btn-gold {
+    background-color: #D4AF37;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  .btn-gold:hover {
+    background-color: #c39c2e;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transform: scale(1.03);
+  }
+  
+  .playbutton i {
+    font-size: 3rem;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .playbutton:hover i {
+    color: #D4AF37;
+  }
+  #testimonials {
+    background-color: #fffce8; /* soft yellow background */
+    padding: 60px 0;
+  }
+  
+  .testimonial-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .testimonial-item .desc i {
+    color: #f0c000; /* yellow accent */
+  }
+  
+  .testi-meta {
+    margin-top: 20px;
+  }
+  
+  .testi-meta img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testi-meta h5 {
+    font-size: 18px;
+    color: #222;
+  }
+  
+  .testi-meta small {
+    display: block;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  
+
   
