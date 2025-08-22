@@ -563,7 +563,7 @@ li.social-links a {
 .section-title {
     display: block;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .section-title p {
@@ -2171,6 +2171,11 @@ select.form-control {
 .shadow-lg {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+.navbar-brand {
+  width: 100%; 
+  height: 100%;
+  margin-top: -15px;
+}
 
 /* Optional Enhancements */
 .navbar-brand img {
@@ -2210,7 +2215,10 @@ select.form-control {
   
   @media (max-width: 768px) {
     .navbar-brand img {
-      max-height: 45px;
+      /* max-height: 45px; */
+    }
+    .navbar-brand {
+      margin-top: -70px;
     }
     .navbar {
         border-radius: 0px !important;
@@ -2229,6 +2237,9 @@ select.form-control {
     .navbar-nav > li > a {
       padding: 10px 20px;
       display: block;
+    }
+    .footer {
+      padding: 0px 0 20px !important;
     }
   }
 
@@ -2296,6 +2307,84 @@ select.form-control {
     color: #888;
     font-size: 14px;
   }
+
+  #map {
+    width: 100%;
+    height: 400px;   /* or 100vh for full screen */
+    min-height: 300px;
+  }
+  
+  @media (max-width: 767px) {
+    #map {
+      height: 300px; /* smaller height for mobile */
+    }
+  }
+
+  /* About Us Section */
+.about-section {
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 0;
+  }
+  
+  .about-heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 25px;
+  }
+  
+  .sub-heading {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .about-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #ff9900;
+    font-weight: 500;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 767px) {
+    .about-heading {
+      font-size: 26px;
+    }
+    .sub-heading {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    .about-text {
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: left; /* better readability on small screens */
+    }
+  }
+  .preloader {
+    border: 6px solid #eee;         /* Outer circle color */
+    border-top: 6px solid #ff9900;  /* Highlight color (can be your brand color) */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto; /* Center on page */
+  }
+  
+  @keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
   
   
 

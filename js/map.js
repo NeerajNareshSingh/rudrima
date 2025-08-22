@@ -32,3 +32,21 @@
         }
         )(marker, i));
     }
+
+    var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: new google.maps.LatLng(26.7176093, 80.9045919),
+    scrollwheel: false,
+    draggable: !isMobile,   // disable drag on mobile
+    mapTypeControl: false,
+    scaleControl: false,
+    styles: [
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [{ "color": "#444444" }]
+      }
+    ]
+});
